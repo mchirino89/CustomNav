@@ -9,4 +9,7 @@
 import UIKit
 
 class ReturnViewController: UIViewController {
+    @IBAction func returnAction() {
+        navigationController?.popToRootViewController(animated: true)
+    }
 }

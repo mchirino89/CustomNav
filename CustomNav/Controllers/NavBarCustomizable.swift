@@ -14,7 +14,7 @@ enum NavBar {
     case finish
     case undefined
 
-    func queryState(basedOn incomingView: UIViewController) -> NavBar {
+    static func queryState(basedOn incomingView: UIViewController) -> NavBar {
         if incomingView.isKind(of: RootViewController.self) {
             return .root
         } else if incomingView.isKind(of: BeyondViewController.self) {
@@ -32,31 +32,35 @@ protocol NavBarStatable where Self: UIViewController {
 }
 
 extension NavBarStatable {
-    init() {
-        self.init()
-        current = .undefined
+    var current: NavBar {
+        return .queryState(basedOn: self)
     }
 }
 
 protocol NavBarCustomizable: NavBarStatable {
-    func setUI()
+    func setNavUI()
+    func updateNav(with title: String, and color: UIColor)
 }
 
 extension NavBarCustomizable {
-    func setUI() {
+
+    func setNavUI() {
+        print("Updating state for \(current)")
         switch current {
         case .root:
-            title = "Root view"
-            navigationController?.navigationBar.tintColor = .green
+            updateNav(with: "Root view", and: .green)
         case .beyond:
-            title = "Beyond view"
-            navigationController?.navigationBar.tintColor = .blue
+            updateNav(with: "Beyond view", and: .blue)
         case .finish:
-            title = "Final view"
-            navigationController?.navigationBar.tintColor = .red
+            updateNav(with: "Final view", and: .red)
         default:
-            title = "Undefined view"
-            navigationController?.navigationBar.tintColor = .clear
+            updateNav(with: "Undefined view", and: .clear)
         }
     }
+
+    func updateNav(with title: String, and color: UIColor) {
+//        navigationController?.title = title
+        UINavigationBar.appearance().tintColor = color
+    }
+
 }

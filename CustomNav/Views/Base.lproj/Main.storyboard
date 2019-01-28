@@ -50,7 +50,6 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="beyondAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wp-9a-VML"/>
                                     <segue destination="Hm3-9P-efZ" kind="show" id="2ra-l9-eri"/>
                                 </connections>
                             </button>
@@ -136,6 +135,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="returnAction" destination="quB-Sd-8YN" eventType="touchUpInside" id="jbR-Bs-Sbm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

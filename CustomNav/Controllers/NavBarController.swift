@@ -8,10 +8,12 @@
 
 import UIKit
 
-class NavBarController: UINavigationController, NavBarStatable {
-
-    // 0. Define initial state
-    var current: NavBar = .root
+class NavBarController: UINavigationController, NavBarCustomizable {
+    var current: NavBar = .root {
+        didSet {
+            setNavUI()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +26,6 @@ extension NavBarController: UINavigationControllerDelegate {
                               willShow viewController: UIViewController,
                               animated: Bool) {
         // 1. A new state is generated
-        current = current.queryState(basedOn: viewController)
+        current = .queryState(basedOn: viewController)
     }
 }
