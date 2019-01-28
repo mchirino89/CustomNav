@@ -51,6 +51,7 @@
                                 </state>
                                 <connections>
                                     <action selector="beyondAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="8wp-9a-VML"/>
+                                    <segue destination="Hm3-9P-efZ" kind="show" id="2ra-l9-eri"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +81,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1S-31-Zd3">
-                                <rect key="frame" x="103.66666666666669" y="408.33333333333331" width="207" height="89.333333333333314"/>
+                                <rect key="frame" x="103.66666666666669" y="430.33333333333331" width="207" height="89.333333333333314"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal">
@@ -93,6 +94,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="quB-Sd-8YN" kind="show" id="Nsx-Te-p0m"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
