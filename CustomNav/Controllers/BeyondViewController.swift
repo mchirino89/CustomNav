@@ -9,15 +9,4 @@
 import UIKit
 
 class BeyondViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
-}
-
-extension BeyondViewController: NavBarHandable {
-    @IBAction func returnAction() {
-    }
 }

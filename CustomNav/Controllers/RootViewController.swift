@@ -9,14 +9,4 @@
 import UIKit
 
 class RootViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-}
-
-extension RootViewController {
-    @IBAction func beyondAction() {
-    }
 }

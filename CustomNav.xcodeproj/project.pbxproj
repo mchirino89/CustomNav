@@ -16,6 +16,7 @@
 		E1E7BFF321FA31A100435BBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7BFF221FA31A100435BBC /* Default-568h@2x.png */; };
 		E1E7BFFC21FB50F400435BBC /* BeyondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFFB21FB50F400435BBC /* BeyondViewController.swift */; };
 		E1E7BFFE21FB510B00435BBC /* ReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFFD21FB510B00435BBC /* ReturnViewController.swift */; };
+		E1E7C00021FE803200435BBC /* NavBarCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E1E7BFF221FA31A100435BBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E1E7BFFB21FB50F400435BBC /* BeyondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeyondViewController.swift; sourceTree = "<group>"; };
 		E1E7BFFD21FB510B00435BBC /* ReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnViewController.swift; sourceTree = "<group>"; };
+		E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarCustomizable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +94,11 @@
 			isa = PBXGroup;
 			children = (
 				E1E7BFDB21FA2DC500435BBC /* AppDelegate.swift */,
-				E1E7BFDD21FA2DC500435BBC /* RootViewController.swift */,
-				E1E7BFF021FA315400435BBC /* NavBarController.swift */,
 				E1E7BFFB21FB50F400435BBC /* BeyondViewController.swift */,
+				E1E7BFF021FA315400435BBC /* NavBarController.swift */,
+				E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */,
 				E1E7BFFD21FB510B00435BBC /* ReturnViewController.swift */,
+				E1E7BFDD21FA2DC500435BBC /* RootViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				E1E7BFDE21FA2DC500435BBC /* RootViewController.swift in Sources */,
 				E1E7BFFC21FB50F400435BBC /* BeyondViewController.swift in Sources */,
 				E1E7BFF121FA315400435BBC /* NavBarController.swift in Sources */,
+				E1E7C00021FE803200435BBC /* NavBarCustomizable.swift in Sources */,
 				E1E7BFDC21FA2DC500435BBC /* AppDelegate.swift in Sources */,
 				E1E7BFFE21FB510B00435BBC /* ReturnViewController.swift in Sources */,
 			);

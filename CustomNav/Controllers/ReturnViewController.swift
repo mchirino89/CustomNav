@@ -9,16 +9,4 @@
 import UIKit
 
 class ReturnViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-    
 }
-
-extension ReturnViewController: NavBarHandable {
-    @IBAction func rootAction() {
-    }
-}
-

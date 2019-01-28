@@ -66,9 +66,6 @@
                     <navigationItem key="navigationItem" title="First view" id="A8V-pk-bGb">
                         <barButtonItem key="backBarButtonItem" title=" " id="eYR-io-1cR"/>
                     </navigationItem>
-                    <connections>
-                        <segue destination="Hm3-9P-efZ" kind="show" identifier="goBeyondSegue" id="gF8-Hj-gw0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P1S-31-Zd3">
-                                <rect key="frame" x="103.66666666666669" y="430.33333333333331" width="207" height="89.333333333333314"/>
+                                <rect key="frame" x="103.66666666666669" y="408.33333333333331" width="207" height="89.333333333333314"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal">
@@ -107,9 +104,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tY5-lh-jt1"/>
                     </view>
-                    <connections>
-                        <segue destination="quB-Sd-8YN" kind="show" identifier="beyonderSegue" id="SL2-d0-63c"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVv-i5-SwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,22 +8,10 @@
 
 import UIKit
 
-protocol NavBarHandable: class {
+class NavBarController: UINavigationController, NavBarStatable {
 
-}
-
-class NavBarController: UINavigationController {
-
-    var size: CGRect{
-        return CGRect(origin: .zero, size: CGSize(width: view.bounds.width, height: 100))
-    }
-    lazy var customView: UIView = {
-        let custom = UIView(frame: size)
-        custom.translatesAutoresizingMaskIntoConstraints = false
-        custom.backgroundColor = .blue
-        return custom
-    }()
-    weak var navDelegate: NavBarHandable?
+    // 0. Define initial state
+    var current: NavBar = .root
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +23,7 @@ extension NavBarController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-
+        // 1. A new state is generated
+        current = current.queryState(basedOn: viewController)
     }
 }
