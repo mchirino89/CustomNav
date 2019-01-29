@@ -8,5 +8,11 @@
 
 import UIKit
 
-class BeyondViewController: NavBarDisplayController {
+class BeyondViewController: UIViewController {
+}
+
+extension BeyondViewController: NavBarStylable {
+    var viewStyle: NavBarStyle {
+        return .beyond
+    }
 }

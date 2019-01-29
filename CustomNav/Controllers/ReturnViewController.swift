@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ReturnViewController: NavBarDisplayController {
+class ReturnViewController: UIViewController {
     @IBAction func returnAction() {
         navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+extension ReturnViewController: NavBarStylable {
+    var viewStyle: NavBarStyle {
+        return .finish
     }
 }

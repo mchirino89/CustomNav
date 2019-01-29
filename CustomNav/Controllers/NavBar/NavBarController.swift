@@ -8,20 +8,26 @@
 
 import UIKit
 
-class NavBarController: UINavigationController, NavBarCustomizable {
-
-    weak var updatableDelegate: NavBarUpdatable?
-
-    /// 1. Set init state
-    var current: NavBar = .root {
-        didSet {
-            setNavUI()
-        }
-    }
+class NavBarController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
+    }
+
+    func handleNavBar(for style: NavBarStyle, in navBar: UINavigationBar) {
+        navBar.tintColor = .white
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        switch style {
+        case .default:
+            navBar.barTintColor = .red
+        case .beyond:
+            navBar.barTintColor = .blue
+        case .finish:
+            navBar.barTintColor = .green
+        case .undefined:
+            navBar.barTintColor = .yellow
+        }
     }
 }
 
@@ -29,7 +35,9 @@ extension NavBarController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        // 2. A new state is generated
-        current = .queryState(basedOn: viewController)
+        let style: NavBarStyle = (viewController as? NavBarStylable)?.viewStyle ?? .default
+        handleNavBar(for: style, in: self.navigationBar)
     }
 }
+
+

@@ -8,5 +8,11 @@
 
 import UIKit
 
-class RootViewController: NavBarDisplayController {
+class RootViewController: UIViewController {
+}
+
+extension RootViewController: NavBarStylable {
+    var viewStyle: NavBarStyle {
+        return .default
+    }
 }

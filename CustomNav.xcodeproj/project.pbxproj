@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E163CAED21FF83ED007890A7 /* NavBarDisplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E163CAEC21FF83ED007890A7 /* NavBarDisplayController.swift */; };
+		E163CAED21FF83ED007890A7 /* NavBarStylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E163CAEC21FF83ED007890A7 /* NavBarStylable.swift */; };
 		E1E7BFDC21FA2DC500435BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFDB21FA2DC500435BBC /* AppDelegate.swift */; };
 		E1E7BFE121FA2DC500435BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1E7BFDF21FA2DC500435BBC /* Main.storyboard */; };
 		E1E7BFE321FA2DC700435BBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1E7BFE221FA2DC700435BBC /* Assets.xcassets */; };
@@ -15,13 +15,12 @@
 		E1E7BFF121FA315400435BBC /* NavBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFF021FA315400435BBC /* NavBarController.swift */; };
 		E1E7BFF321FA31A100435BBC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1E7BFF221FA31A100435BBC /* Default-568h@2x.png */; };
 		E1E7BFFE21FB510B00435BBC /* ReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFFD21FB510B00435BBC /* ReturnViewController.swift */; };
-		E1E7C00021FE803200435BBC /* NavBarCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */; };
 		E1E7C00321FE8ED000435BBC /* BeyondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7C00121FE8ED000435BBC /* BeyondViewController.swift */; };
 		E1E7C00421FE8ED000435BBC /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7C00221FE8ED000435BBC /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E163CAEC21FF83ED007890A7 /* NavBarDisplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDisplayController.swift; sourceTree = "<group>"; };
+		E163CAEC21FF83ED007890A7 /* NavBarStylable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarStylable.swift; sourceTree = "<group>"; };
 		E1E7BFD821FA2DC500435BBC /* CustomNav.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomNav.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E7BFDB21FA2DC500435BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1E7BFE021FA2DC500435BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +30,6 @@
 		E1E7BFF021FA315400435BBC /* NavBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarController.swift; sourceTree = "<group>"; };
 		E1E7BFF221FA31A100435BBC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E1E7BFFD21FB510B00435BBC /* ReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReturnViewController.swift; sourceTree = "<group>"; };
-		E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarCustomizable.swift; sourceTree = "<group>"; };
 		E1E7C00121FE8ED000435BBC /* BeyondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeyondViewController.swift; sourceTree = "<group>"; };
 		E1E7C00221FE8ED000435BBC /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,8 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				E1E7BFF021FA315400435BBC /* NavBarController.swift */,
-				E1E7BFFF21FE803200435BBC /* NavBarCustomizable.swift */,
-				E163CAEC21FF83ED007890A7 /* NavBarDisplayController.swift */,
+				E163CAEC21FF83ED007890A7 /* NavBarStylable.swift */,
 			);
 			path = NavBar;
 			sourceTree = "<group>";
@@ -189,8 +186,7 @@
 				E1E7C00321FE8ED000435BBC /* BeyondViewController.swift in Sources */,
 				E1E7BFF121FA315400435BBC /* NavBarController.swift in Sources */,
 				E1E7C00421FE8ED000435BBC /* RootViewController.swift in Sources */,
-				E163CAED21FF83ED007890A7 /* NavBarDisplayController.swift in Sources */,
-				E1E7C00021FE803200435BBC /* NavBarCustomizable.swift in Sources */,
+				E163CAED21FF83ED007890A7 /* NavBarStylable.swift in Sources */,
 				E1E7BFDC21FA2DC500435BBC /* AppDelegate.swift in Sources */,
 				E1E7BFFE21FB510B00435BBC /* ReturnViewController.swift in Sources */,
 			);
