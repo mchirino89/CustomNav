@@ -58,15 +58,15 @@ extension NavBarCustomizable {
         case .root:
             newStyle = NavBarStyle(title: "Root view",
                                        color: .green,
-                                       height: 44)
+                                       height: 84)
         case .beyond:
             newStyle = NavBarStyle(title: "Beyond view",
                                        color: .blue,
-                                       height: 64)
+                                       height: 104)
         case .finish:
             newStyle = NavBarStyle(title: "Final view",
                                        color: .red,
-                                       height: 84)
+                                       height: 124)
         default:
             newStyle = NavBarStyle(title: "Undefined view",
                                        color: .clear,
