@@ -8,5 +8,5 @@
 
 import UIKit
 
-class BeyondViewController: UIViewController {
+class BeyondViewController: NavBarDisplayController {
 }

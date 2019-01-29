@@ -110,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wVv-i5-SwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="98"/>
+            <point key="canvasLocation" x="1440.5797101449277" y="97.767857142857139"/>
         </scene>
         <!--Return View Controller-->
         <scene sceneID="ttd-ei-sVr">
@@ -120,9 +120,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVy-zi-mfS">
-                                <rect key="frame" x="104" y="404" width="207" height="89.333333333333314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dVy-zi-mfS">
+                                <rect key="frame" x="103.66666666666669" y="430.33333333333331" width="207" height="89.333333333333314"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal">
@@ -141,6 +140,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dVy-zi-mfS" firstAttribute="centerX" secondItem="buw-QY-gmG" secondAttribute="centerX" id="1cV-v7-R6D"/>
+                            <constraint firstItem="dVy-zi-mfS" firstAttribute="width" secondItem="RsZ-yd-wDd" secondAttribute="width" multiplier="0.5" id="Bss-1r-qas"/>
+                            <constraint firstItem="dVy-zi-mfS" firstAttribute="height" secondItem="RsZ-yd-wDd" secondAttribute="height" multiplier="0.1" id="Omo-fe-jHx"/>
+                            <constraint firstItem="dVy-zi-mfS" firstAttribute="centerY" secondItem="buw-QY-gmG" secondAttribute="centerY" id="jRZ-IC-GL5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="buw-QY-gmG"/>
                     </view>
                 </viewController>

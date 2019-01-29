@@ -8,5 +8,5 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class RootViewController: NavBarDisplayController {
 }

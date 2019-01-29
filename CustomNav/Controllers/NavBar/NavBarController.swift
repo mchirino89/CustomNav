@@ -9,6 +9,10 @@
 import UIKit
 
 class NavBarController: UINavigationController, NavBarCustomizable {
+
+    weak var updatableDelegate: NavBarUpdatable?
+
+    /// 1. Set init state
     var current: NavBar = .root {
         didSet {
             setNavUI()
@@ -25,7 +29,7 @@ extension NavBarController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
-        // 1. A new state is generated
+        // 2. A new state is generated
         current = .queryState(basedOn: viewController)
     }
 }

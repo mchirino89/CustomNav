@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ReturnViewController: UIViewController {
+class ReturnViewController: NavBarDisplayController {
     @IBAction func returnAction() {
         navigationController?.popToRootViewController(animated: true)
     }
