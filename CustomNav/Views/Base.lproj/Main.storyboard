@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.51000000000000001" green="0.23000000000000001" blue="0.02" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KWi-h1-Zmg"/>
@@ -53,13 +53,32 @@
                                     <segue destination="Hm3-9P-efZ" kind="show" id="2ra-l9-eri"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-P8-7Tk">
+                                <rect key="frame" x="0.0" y="88" width="414" height="16"/>
+                                <color key="backgroundColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="0.74802011986301364" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="2Tc-Mx-dC1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tuA-ch-xho">
+                                <rect key="frame" x="0.0" y="104" width="414" height="758"/>
+                                <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pXB-7b-L4V" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="Kjn-se-Ard"/>
+                            <constraint firstItem="tuA-ch-xho" firstAttribute="top" secondItem="gHr-P8-7Tk" secondAttribute="bottom" id="NX3-fL-gbe"/>
+                            <constraint firstItem="gHr-P8-7Tk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eVd-GB-SRS"/>
                             <constraint firstItem="pXB-7b-L4V" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="eog-vM-AGm"/>
                             <constraint firstItem="pXB-7b-L4V" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="p2G-ek-ath"/>
+                            <constraint firstItem="gHr-P8-7Tk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qI9-Y8-Kcv"/>
+                            <constraint firstItem="tuA-ch-xho" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qbq-QA-9d3"/>
+                            <constraint firstItem="tuA-ch-xho" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uQJ-mV-o4C"/>
                             <constraint firstItem="pXB-7b-L4V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uyi-2K-VdS"/>
+                            <constraint firstItem="gHr-P8-7Tk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zQY-eC-kqT"/>
+                            <constraint firstItem="tuA-ch-xho" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zhh-MP-1qQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="98"/>
+            <point key="canvasLocation" x="585.50724637681162" y="97.767857142857139"/>
         </scene>
         <!--Beyond View Controller-->
         <scene sceneID="VxO-aC-ccA">

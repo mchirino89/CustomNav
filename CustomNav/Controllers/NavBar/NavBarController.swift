@@ -9,29 +9,13 @@
 import UIKit
 
 class NavBarController: UINavigationController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
     }
-
-    func handleNavBar(for style: NavBarStyle, in navBar: UINavigationBar) {
-        navBar.tintColor = .white
-        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        switch style {
-        case .default:
-            navBar.barTintColor = .red
-        case .beyond:
-            navBar.barTintColor = .blue
-        case .finish:
-            navBar.barTintColor = .green
-        case .undefined:
-            navBar.barTintColor = .yellow
-        }
-    }
 }
 
-extension NavBarController: UINavigationControllerDelegate {
+extension NavBarController: UINavigationControllerDelegate, NavBarCustomizable {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
@@ -39,5 +23,3 @@ extension NavBarController: UINavigationControllerDelegate {
         handleNavBar(for: style, in: self.navigationBar)
     }
 }
-
-
