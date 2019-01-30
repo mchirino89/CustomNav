@@ -13,22 +13,12 @@ enum NavBarStyle {
     case beyond
     case finish
     case undefined
-}
 
-protocol NavBarStylable: class {
-    var viewStyle: NavBarStyle { get }
-}
-
-protocol NavBarCustomizable where Self: UINavigationController {
-    func handleNavBar(for style: NavBarStyle, in navBar: UINavigationBar)
-}
-
-extension NavBarCustomizable {
-    func handleNavBar(for style: NavBarStyle, in navBar: UINavigationBar) {
+    func handleNavBar(for view: UIView, in navBar: UINavigationBar) {
         navBar.tintColor = .white
         navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        setHeaderSize()
-        switch style {
+//        setHeaderSize(for: view)
+        switch self {
         case .default:
             navBar.barTintColor = .white
         case .beyond:
@@ -40,7 +30,7 @@ extension NavBarCustomizable {
         }
     }
 
-    private func setHeaderSize() {
+    private func setHeaderSize(for view: UIView) {
         let size = CGRect(origin: .zero, size: CGSize(width: 320, height: 100))
         let headerView = UIView(frame: size)
         let profileView = UIImageView(image: UIImage(imageLiteralResourceName: "profile"))
@@ -62,4 +52,8 @@ extension NavBarCustomizable {
         let heightProfile = profileView.heightAnchor.constraint(equalToConstant: size.height * 0.75)
         NSLayoutConstraint.activate([topView, rightView, leftView, heightView, centerXProfile, topProfile, widthProfile, heightProfile])
     }
+}
+
+protocol NavBarStylable: class {
+    var viewStyle: NavBarStyle { get }
 }

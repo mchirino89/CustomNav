@@ -15,11 +15,11 @@ class NavBarController: UINavigationController {
     }
 }
 
-extension NavBarController: UINavigationControllerDelegate, NavBarCustomizable {
+extension NavBarController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController,
                               willShow viewController: UIViewController,
                               animated: Bool) {
         let style: NavBarStyle = (viewController as? NavBarStylable)?.viewStyle ?? .default
-        handleNavBar(for: style, in: self.navigationBar)
+        style.handleNavBar(for: self.view, in: self.navigationBar)
     }
 }
